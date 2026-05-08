@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <div class="form">
+            <input type="text" id="desc" placeholder="وصف المصروف (مثال: أكل، مواصلات)" />
+            <input type="number" id="amount" placeholder="المبلغ" />
+            <button id="addBtn">إضافة مصروف</button>
+        </div>
+
+        <h2>المصاريف</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>الوصف</th>
+                    <th>المبلغ</th>
+                    <th>حذف</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTableBody">
+            </tbody>
+        </table>
+
+        <div class="total">
+            الإجمالي: <span id="totalAmount">0</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
